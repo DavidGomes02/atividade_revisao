@@ -11,7 +11,7 @@ class Pessoa {
     mostrarDados(): void {
         // Imprime uma linha indicando o início dos dados da pessoa
         console.log('--------------Dados da Pessoa-------------');
-
+ 
         // Imprime o nome da pessoa
         console.log(`Nome: ${this.nome}`);
 
@@ -118,7 +118,7 @@ class membro {
     // Método para mostrar os dados de comunicação
     mostrarDados(): void {
         // Imprime uma linha indicando o início dos dados de comunicação
-        console.log('--------------Dados dos membros das equipes-------------');
+        
 
         // Mostrar membros
         console.log('Membros:');
@@ -184,4 +184,5 @@ console.log('\n');
 
 // Testando a exibição dos dados da nova equipe de marketing
 console.log('-----------Equipe de Marketing---------------')
+//console.log(equipeMarketing)
 equipeMarketing1.mostrarDados();// Mostra os dados da equipe de marketing
