@@ -1,0 +1,39 @@
+Classes Principais
+
+1 Classe Pessoa
+Descrição: Representa uma pessoa envolvido no projeto, com um cargo.
+Atributos:
+nome: Nome da pessoa.
+email: Endereço de e-mail da pessoa.
+cargo: Cargo da pessoa no projeto.
+Métodos:
+mostrarDados(): Método abstrato para exibir os dados da pessoa.
+
+2 Classe Projeto
+Descrição: Representa um projeto em andamento.
+Atributos:
+nome: Nome do projeto.
+descricao: Descrição do projeto.
+equipe: Lista de membros da equipe do projeto.
+progresso: Progresso atual do projeto.
+dataInicio: Data de início do projeto.
+dataTermino: Data de término prevista do projeto.
+Métodos:
+mostrarDados(): Método para exibir os dados do projeto.
+
+3 Classe Tarefa
+Descrição: Representa uma tarefa individual dentro de um projeto.
+Atributos:
+descricao: Descrição da tarefa.
+responsavel: Pessoa responsável pela tarefa.
+prazo: Prazo para conclusão da tarefa.
+status: Status atual da tarefa.
+Métodos:
+mostrarDados(): Método para exibir os dados da tarefa.
+
+4 Classe Comunicacao
+Descrição: Facilita a comunicação interna entre os membros da equipe.
+Atributos:
+membros: Lista de membros da equipe.
+Métodos:
+mostrarDados(): Método para exibir os dados de comunicação interna.
