@@ -118,7 +118,7 @@ class comunicacao {
     // Método para mostrar os dados de comunicação
     mostrarDados(): void {
         // Imprime uma linha indicando o início dos dados de comunicação
-  
+        console.log('---------------Dados de Comunicção dos membros---------------')
 
         // Mostrar membros
         console.log('Membros:');
@@ -145,12 +145,14 @@ const pessoa5 = new Pessoa('Eduardo', 'eduardo@email.com', 'Designer Gráfico');
 
 // Criando uma lista de membros da equipe para um projeto
 const equipeProjeto1 = [pessoa1, pessoa2, pessoa3];
-const equipeMarketing = [pessoa4, pessoa5]
+const equipeProjeto2 = [pessoa4, pessoa5, pessoa3];
 
-const equipeMarketing1 = new comunicacao(equipeMarketing)
+
 
 // Criando uma instância de projeto
 const projeto1 = new Projeto('Projeto XYZ', 'Desenvolvimento de um novo aplicativo', equipeProjeto1, 50, new Date('01-01-'), new Date('10-12-2002'));
+
+const projeto2 = new Projeto('ProjectX', 'Projeto de filme', equipeProjeto2, 50 , new Date('2025-02-31'), new Date('2026-02-30'))
 
 // Criando instâncias de tarefas
 const tarefa1 = new Tarefa('Implementar página de login', pessoa1, new Date('2024-03-10'), 'Em andamento');
@@ -173,15 +175,12 @@ tarefa1.mostrarDados(); // Mostra os dados da primeira tarefa
 console.log('\n');
 tarefa2.mostrarDados(); // Mostra os dados da primeira tarefa
 console.log('\n');
+// Testando a exibiçãoda nova equipe 
+console.log('-----------nova equipe---------------')
+projeto2.mostrarDados();// Mostra os dados da equipe de marketing
+console.log('\n');
 comunicacaoInterna.mostrarDados(); // Mostra os dados de comunicação interna
 console.log('\n');
 
 
 
-
-
-
-
-// Testando a exibição dos dados da nova equipe de marketing
-console.log('-----------Equipe de Marketing---------------')
-equipeMarketing1.mostrarDados();// Mostra os dados da equipe de marketing
