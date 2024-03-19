@@ -11,7 +11,7 @@ class Pessoa {
     mostrarDados(): void {
         // Imprime uma linha indicando o início dos dados da pessoa
         console.log('--------------Dados da Pessoa-------------');
- 
+
         // Imprime o nome da pessoa
         console.log(`Nome: ${this.nome}`);
 
@@ -108,7 +108,7 @@ class Tarefa {
     }
 }
 // Definição da classe Comunicacao para facilitar a comunicação entre os membros da equipe
-class membro {
+class comunicacao {
     // O construtor da classe Comunicacao recebe os parâmetros necessários para inicializar seus atributos
     constructor(
         private membros: Pessoa[], // Lista de membros da equipe (atributo privado)
@@ -118,7 +118,7 @@ class membro {
     // Método para mostrar os dados de comunicação
     mostrarDados(): void {
         // Imprime uma linha indicando o início dos dados de comunicação
-        
+  
 
         // Mostrar membros
         console.log('Membros:');
@@ -147,7 +147,7 @@ const pessoa5 = new Pessoa('Eduardo', 'eduardo@email.com', 'Designer Gráfico');
 const equipeProjeto1 = [pessoa1, pessoa2, pessoa3];
 const equipeMarketing = [pessoa4, pessoa5]
 
-const equipeMarketing1 = new membro(equipeMarketing)
+const equipeMarketing1 = new comunicacao(equipeMarketing)
 
 // Criando uma instância de projeto
 const projeto1 = new Projeto('Projeto XYZ', 'Desenvolvimento de um novo aplicativo', equipeProjeto1, 50, new Date('01-01-'), new Date('10-12-2002'));
@@ -164,7 +164,7 @@ const equipeComunicacao = [pessoa1, pessoa2, pessoa3, pessoa4, pessoa5];
 
 
 // Criando uma instância de comunicação interna
-const comunicacaoInterna = new membro(equipeComunicacao);
+const comunicacaoInterna = new comunicacao(equipeComunicacao);
 
 // Testando a exibição dos dados
 projeto1.mostrarDados(); // Mostra os dados do projeto
@@ -184,5 +184,4 @@ console.log('\n');
 
 // Testando a exibição dos dados da nova equipe de marketing
 console.log('-----------Equipe de Marketing---------------')
-//console.log(equipeMarketing)
 equipeMarketing1.mostrarDados();// Mostra os dados da equipe de marketing
